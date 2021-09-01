@@ -15,15 +15,12 @@ type Voucher struct {
 }
 
 type Handler struct {
-	Status Info    `json:"status"`
-	Data   Success `json:"data"`
+	Status Info `json:"status"`
 }
 
 type Info struct {
 	Code string `json:"code"`
 }
-
-type Success struct{}
 
 func main() {
 	perform := fiber.New(fiber.Config{StrictRouting: true})
