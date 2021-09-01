@@ -1,6 +1,6 @@
 # 📦 Truewallet Gift Vouchers with Golang
 
-⠀⠀**Today**, people who make websites about purchasing goods or anything related to that transaction. They will have one of the transaction options, **Truewallet**, which is widely used in Thailand. However, we cannot use the core of the transaction in the normal way. **Unless you are a company and request to use the services of the official Truewallet for the main purpose of the transaction.**
+⠀⠀**Today**, people who make websites about purchasing goods or anything related to that transaction. They will have one of the transaction options, **Truewallet**, which is widely used in Thailand. However, we cannot use the core of the transaction in the normal way. **Unless you are a company and request to use the services of the official Truewallet for the core of the transaction.**
 
 
 ⠀⠀Until Truewallet has created a **Gift Voucher** to send money on any occasion through a link that Truewallet has generated. Just send the link to someone else and they will be able to receive your money.
