@@ -70,12 +70,9 @@ type Voucher struct {
 }
 
 type Handler struct {
-	Status Info    `json:"status"`
-	Data   Success `json:"data"`
-}
-
-type Info struct {
-	Code string `json:"code"`
+	Status struct {
+		Code string `json:"code"`
+	} `json:"status"`
 }
 
 func main() {
