@@ -46,7 +46,7 @@ func NewRequestCampaign(mobile_number, campaign_code) { /* Code */ }
 You can see that the **func NewRequestCampaign** It requires two parameters to send data to Truewallet:
 
 - **mobile_number** Is the phone number of the registered with Truewallet and used for receiving money from campaign.
-- **campaign_code** It is a link created to receive money from Truewallet account holders. (Such as https://gift.truemoney.com/campaign?v={%#@})
+- **campaign_link** It is a link created to receive money from the account owner of that link. (Such as https://gift.truemoney.com/campaign?v={%#@})
 
 ------
 
