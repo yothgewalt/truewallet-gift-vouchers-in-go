@@ -7,7 +7,7 @@
 
 **Of course, it's public. There is no encryption whatsoever, so developers can apply it to their websites.**
 
-### ⚗️ functions/campaign.go (✅ 634 Bytes)
+### ⚗️ functions/campaign.go (✅ 742 Bytes)
 This is a file that sends data to Truewallet Gift Voucher service and it will callback back as Json.
 
 ```go
@@ -21,6 +21,7 @@ import (
 )
 
 func NewRequestCampaign(mobile_number, campaign_code string) (string, error) {
+	campaign_code := strings.Replace(campaign_link, "https://gift.truemoney.com/compaign?v=", "", -1)
 	campaign_url := "https://gift.truemoney.com/campaign/vouchers/" + campaign_code + "/redeem"
 	payload, _ := json.Marshal(map[string]string{"mobile": mobile_number})
 	reader_buffer := bytes.NewBuffer(payload)
