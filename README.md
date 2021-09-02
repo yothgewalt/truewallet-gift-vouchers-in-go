@@ -50,7 +50,7 @@ You can see that the **func NewRequestCampaign** It requires two parameters to s
 
 ------
 
-### ⚗️ /example.go (✅ 1.54 Kilobytes)
+### ⚗️ /example.go (✅ 1.47 Kilobytes)
 Here is an example file I created to simulate as backend to pass data to front end via json.
 ```go
 package main
