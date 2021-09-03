@@ -20,7 +20,7 @@ import (
 	"net/http"
 )
 
-func NewRequestCampaign(mobile_number, campaign_code string) (string, error) {
+func NewRequestCampaign(mobile_number, campaign_link string) (string, error) {
 	campaign_code := strings.Replace(campaign_link, "https://gift.truemoney.com/compaign?v=", "", -1)
 	campaign_url := "https://gift.truemoney.com/campaign/vouchers/" + campaign_code + "/redeem"
 	payload, _ := json.Marshal(map[string]string{"mobile": mobile_number})
@@ -40,7 +40,7 @@ func NewRequestCampaign(mobile_number, campaign_code string) (string, error) {
 **🥴 The way I have it is to send all data in json format for easy and flexible management. You can select everything to be returned.**
 
 ```go
-func NewRequestCampaign(mobile_number, campaign_code) { /* Code */ }
+func NewRequestCampaign(mobile_number, campaign_link) { /* Code */ }
 ```
 
 You can see that the **func NewRequestCampaign** It requires two parameters to send data to Truewallet:
